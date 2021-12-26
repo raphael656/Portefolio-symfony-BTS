@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.header_column{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background:#FCFAFA;
+    font-family: 'Roboto', sans-serif;
+    width: 240px;
+    -webkit-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.lien{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px
+}
+
+a{
+    text-decoration: none;
+    padding-top: 10px;
+    color :black;
+}
+
+
+.nom_logo{
+    padding-top: 10px;
+    border-bottom: 2px solid black;
+}
+.lien_nom{
+    text-align:center;
+}
+
+.image{
+    width:200px;
+    clip-path:ellipse(50% 50%);
+}
+
+.liens_page{
+    position: relative;
+    padding-top: 30px;
+}
+.liens_page::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .liens_page:hover::before{
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+}
+/* footer  */
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#D3D5D4;
+    margin-left: 235px;
+    font-family:'roboto';
+}
+
+.footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+}
+
+.footer-basic li {
+    padding:0 10px;
+}
+
+.footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+    opacity:1;
+}
+
+.footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+    opacity:0.9;
+}
+
+.footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:black;
+    margin-bottom:0;
+}
+
+.list-inline-item{
+    color:black;
+}
+
+
